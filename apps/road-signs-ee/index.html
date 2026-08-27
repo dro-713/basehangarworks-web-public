@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Road Signs EE &mdash; Base Hangar Works</title>
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    .app-hero {
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+
+    .app-icon-placeholder {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed var(--border);
+      border-radius: 20px;
+      color: var(--text-muted);
+      font-size: 0.7rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      line-height: 1.3;
+    }
+
+    .app-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+    }
+
+    .lang-toggle {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      margin-bottom: 32px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .lang-btn:hover {
+      color: var(--text);
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: var(--bg);
+    }
+
+    .app-copy {
+      max-width: 560px;
+      margin: 0 auto 40px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .app-copy h3 {
+      color: var(--text);
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 24px 0 6px;
+    }
+
+    .app-copy h3:first-child {
+      margin-top: 0;
+    }
+
+    .app-copy-disclaimer {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .app-copy-disclaimer a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .app-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .badge-link {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--bg);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+
+    .badge-link:hover {
+      background: var(--accent-dim);
+      transform: translateY(-2px);
+    }
+
+    .badge-link-alt {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent-dim);
+    }
+
+    .badge-link-alt:hover {
+      background: rgba(255, 107, 53, 0.1);
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">Base Hangar Works</a>
+      <nav class="nav">
+        <a href="../../index.html#games">Games</a>
+        <a href="../../index.html#apps">Apps</a>
+        <a href="../../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="app-hero">
+      <div class="container">
+        <div class="app-icon-placeholder" aria-hidden="true">Icon<br>coming soon</div>
+        <h1>Road Signs EE</h1>
+
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang-btn="et">ET</button>
+          <button type="button" class="lang-btn active" data-lang-btn="en">EN</button>
+          <button type="button" class="lang-btn" data-lang-btn="ru">RU</button>
+        </div>
+
+        <div class="app-copy">
+          <p data-lang="et" hidden>Road Signs EE aitab sul &otilde;ppida ja harjutada Eesti ja Euroopa Liidu liiklusm&auml;rke. See rakendus on m&otilde;eldud &uuml;ksnes &otilde;ppeotstarbeks ega ole seotud Transpordiametiga.</p>
+          <div data-lang="en">
+            <p>Road Signs EE helps you learn, practice, and look up official Estonian and EU road signs &mdash; the same signs covered in Estonian driving theory education.</p>
+
+            <h3>Learn Mode</h3>
+            <p>Browse road signs by category as flashcards. Choose "Blind" mode to test your memory before revealing the answer, or "Full View" mode to see the sign and its explanation together. Mark signs as favorites to build your own practice set.</p>
+
+            <h3>Quiz Mode</h3>
+            <p>Test yourself with multiple-choice quizzes. Choose how many questions you want (10, 20, 30, or a custom number), and quiz yourself on all signs or just your favorites.</p>
+
+            <h3>Signs Catalogue</h3>
+            <p>A complete pocket reference covering every sign category defined in Estonia's official road sign regulation &mdash; warning, priority, prohibition, mandatory, informational, and service signs, plus guide signs, supplementary plates, and road markings. Search by name or browse to find the sign you're looking for.</p>
+
+            <h3>Works Fully Offline</h3>
+            <p>No internet connection required for Learn, Quiz, or the Catalogue &mdash; study or look up a sign anywhere, including on a flight, underground, or anywhere else without signal.</p>
+
+            <h3>Free to Try</h3>
+            <p>The Priority signs category is completely free, across every mode &mdash; try the app before deciding to unlock the rest.</p>
+
+            <h3>Full Access</h3>
+            <p>Unlock every category with a single one-time purchase. Students enrolled at a partner driving school may be eligible for a reduced price &mdash; ask your school if they participate.</p>
+
+            <h3>Available in Three Languages</h3>
+            <p>Estonian, English, and Russian &mdash; switch anytime from the main menu.</p>
+
+            <p class="app-copy-disclaimer">Road Signs EE is an independent study aid and is not affiliated with, endorsed by, or a representative of the Estonian Transport Administration (Transpordiamet) or any government entity. Sign content is based on Estonia's official traffic sign regulation, published by <a href="https://www.riigiteataja.ee/et/akt/103032011006?leiaKehtiv" target="_blank" rel="noopener noreferrer">Riigi Teataja</a>. The app is intended to support learning and does not guarantee passing any driving theory exam.</p>
+          </div>
+          <p data-lang="ru" hidden>Road Signs EE &#1087;&#1086;&#1084;&#1086;&#1075;&#1072;&#1077;&#1090; &#1080;&#1079;&#1091;&#1095;&#1072;&#1090;&#1100; &#1080; &#1086;&#1090;&#1088;&#1072;&#1073;&#1072;&#1090;&#1099;&#1074;&#1072;&#1090;&#1100; &#1101;&#1089;&#1090;&#1086;&#1085;&#1089;&#1082;&#1080;&#1077; &#1080; &#1077;&#1074;&#1088;&#1086;&#1087;&#1077;&#1081;&#1089;&#1082;&#1080;&#1077; &#1076;&#1086;&#1088;&#1086;&#1078;&#1085;&#1099;&#1077; &#1079;&#1085;&#1072;&#1082;&#1080;. &#1069;&#1090;&#1086; &#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1077; &#1087;&#1088;&#1077;&#1076;&#1085;&#1072;&#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1086; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1076;&#1083;&#1103; &#1086;&#1073;&#1091;&#1095;&#1077;&#1085;&#1080;&#1103; &#1080; &#1085;&#1077; &#1089;&#1074;&#1103;&#1079;&#1072;&#1085;&#1086; &#1089; &#1044;&#1077;&#1087;&#1072;&#1088;&#1090;&#1072;&#1084;&#1077;&#1085;&#1090;&#1086;&#1084; &#1090;&#1088;&#1072;&#1085;&#1089;&#1087;&#1086;&#1088;&#1090;&#1072; &#1069;&#1089;&#1090;&#1086;&#1085;&#1080;&#1080; (Transpordiamet).</p>
+        </div>
+
+        <div class="app-links">
+          <!-- TODO: replace with real Play Store URL once the public listing goes live -->
+          <a href="#" class="badge-link">Get it on Google Play</a>
+          <!-- TODO: replace with real Facebook page URL -->
+          <a href="#" class="badge-link badge-link-alt">Facebook Page</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <p class="footer-brand">Base Hangar Works</p>
+      <nav class="footer-links">
+        <a href="#">Support</a>
+        <a href="#">Privacy</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Base Hangar Works. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('[data-lang-btn]').forEach(function (b) {
+          b.classList.toggle('active', b === btn);
+        });
+        var lang = btn.getAttribute('data-lang-btn');
+        document.querySelectorAll('[data-lang]').forEach(function (el) {
+          el.hidden = el.getAttribute('data-lang') !== lang;
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

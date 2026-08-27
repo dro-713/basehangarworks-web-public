@@ -159,6 +159,21 @@ a {
   margin-bottom: 14px;
 }
 
+.card-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+  transform: translateX(4px);
+}
+
 /* Footer */
 
 .site-footer {
